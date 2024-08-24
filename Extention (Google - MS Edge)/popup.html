@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+        <title>Vérificateur d’Authenticité des URL du Gouvernement Français</title>
+        
+        <!-- Import Bootstrap 5.3 CSS from Bootswatch zephyr theme (CDN) -->
+        <link rel="stylesheet" href="css/bootstrap.min.css" />
+        
+        <!-- Import Bootstrap Icons CSS (CDN) -->
+        <link rel="stylesheet" href="css/bootstrap-icons.min.css">
+        
+        <style>
+            body {width: 600px; height: 180px;}
+            p {text-align: justify !important}
+            p {text-align: justify !important}
+        </style>
+    </head>
+    <body>
+
+        <!-- Alerte -->
+        <div id="alert" class="alert alert-dismissible alert-primary text-align-center rounded-0 mb-0">
+            <strong>Information</strong><br> Ce site n'a pas été reconnu.
+        </div>
+
+
+        <!-- Tab -->
+        <ul class="nav nav-tabs" role="tablist">
+            <li class="nav-item" role="presentation">
+                <a class="nav-link active" data-bs-toggle="tab" href="#home" aria-selected="true" role="tab" tabindex="-1">
+                    A Propos
+                </a>
+            </li>
+            <li class="nav-item" role="presentation">
+                <a class="nav-link" data-bs-toggle="tab" href="#info" aria-selected="false" role="tab">
+                    Types de liens malvaillants
+                </a>
+            </li>
+            <li class="nav-item" role="presentation">
+                <a class="nav-link" data-bs-toggle="tab" href="#check" aria-selected="false" role="tab">
+                    Vérifier un URL
+                </a>
+            </li>
+
+          </ul>
+
+
+
+          <!-- Tab Contents -->
+          <div id="myTabContent" class="tab-content">
+
+            <!-- 1 -->
+            <div class="tab-pane fade active show" id="home" role="tabpanel">
+                <div class="d-flex justify-content-center align-items-center my-3">
+                    <img src="img/Mariane.png" class="w-25">
+                </div>
+        
+                <div class="d-flex justify-content-center align-items-center m-3 mt-2">
+                    <p class="mb-0">
+                       Cette extension web a été conçue pour renforcer la sécurité en ligne en identifiant les URL malveillantes et homographiques. Son usage est accès sur la vérification de l’authenticité des sites administratifs et gouvernementaux français.
+                    </p>
+                </div>
+
+                <div class="d-flex justify-content-center align-items-start p-2">
+                    <a target="_blank" href="https://github.com/Mending-Electronics" class="btn btn-sm btn-primary">
+                        <i class="bi bi-github text-secondary me-2"></i>
+                        <strong>GitHub </strong>
+                    </a>
+
+                    <a target="_blank" href="https://www.signal-arnaques.com/" class="btn btn-sm btn-danger ms-3">
+                        <i class="bi bi-exclamation-octagon text-secondary me-2"></i>
+                        <strong>Signal-Arnaques</strong>
+                    </a>
+                </div>
+
+                <div class="d-flex justify-content-center align-items-start pb-2">
+                    <a target="_blank" href="urls.html" class="btn btn-sm btn-primary">
+                        <i class="bi bi-card-checklist text-secondary me-2"></i>
+                        <strong>List des domaines pris en charge </strong>
+                    </a>
+                </div>
+
+            </div>
+
+            <!-- 2 -->
+            <div class="tab-pane fade" id="info" role="tabpanel">
+                    
+                <!-- Accordion -->
+                <div class="accordion" id="accordionExample">
+                    
+                    <!-- 1 -->
+                    <div class="accordion-item rounded-0">
+                        <h2 class="accordion-header" id="headingOne">
+                            <button class="accordion-button collapsed rounded-0" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                                <strong>Attaques Homographiques</strong>
+                            </button>
+                        </h2>
+                        <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample" style="">
+                            <div class="accordion-body">
+
+
+
+                                <p>Les sites de phishing utilisent de plus en plus des caractères cyrilliques pour imiter des noms de domaine légitimes. Ces attaques, connues sous le nom d’attaques homographiques, exploitent les similitudes visuelles entre certains caractères de différents alphabets pour tromper les utilisateurs.</p>
+
+
+                                <p>
+                                   Les liens dont le nom de domaine contient des caractères cyrilliques peuvent sembler authentiques visuellement, mais ils peuvent rediriger l'utilisateur vers une page de phishing. Il est crucial de vérifier l'authenticité des URL avant de cliquer, surtout lorsqu'il s'agit de sites administratifs, gouvernementaux, e-commerces, reseaux sociaux et postaux.
+                                </p>
+
+                                <p>Voici deux liens visuellement identiques (Homographiques) :</p>
+                                <ul>
+                                <li><a target="_blank" href="https://www.example.com">https://www.example.com</a></li>
+                                <li><a target="_blank" href="https://www.exаmple.com">https://www.exаmple.com</a> <code>(contient un caractère "а" en cyrillique)</code> </li>
+                                </ul>
+                                
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <!-- 2 -->
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingTwo">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                <strong>Sites certifiés HTTPS</strong> 
+                            </button>
+                        </h2>
+                        <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+
+                                <p>Les sites de phishing utilisant des caractères cyrilliques pour imiter des noms de domaine légitimes peuvent être hébergés sur des serveurs sécurisés et obtenir des certificats HTTPS.</p>
+                                <p>Les certificats HTTPS sont délivrés par des autorités de certification (CA) qui vérifient la propriété du domaine, mais ils ne peuvent pas toujours détecter les noms de domaine trompeurs utilisant des caractères similaires. Par conséquent, même un site de phishing peut apparaître comme sécurisé avec un cadenas vert dans la barre d’adresse du navigateur.</p>
+        
+                                <p>Pour se protéger contre ces attaques, il est recommandé de :</p>
+                                <ul>
+                                    <li class="my-1"><strong>Vérifier attentivement l’URL :</strong> Rechercher des caractères inhabituels ou des différences subtiles.</li>
+                                    <li class="my-1"><strong>Utiliser des extensions de navigateur :</strong> Certaines extensions comme celle-ci peuvent aider à détecter les noms de domaine trompeurs.</li>
+                                    <li class="my-1"><strong>Activer l’affichage Punycode :</strong> Certains navigateurs permettent d’afficher les noms de domaine en Punycode, ce qui rend les caractères non latins plus visibles.</li>
+                                </ul>
+                                  
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+
+            <!-- 3 -->
+            <div class="tab-pane fade" id="check" role="tabpanel">
+
+        
+                <div class="d-flex justify-content-center align-items-center m-3 mt-2">
+                    <p class="mb-0">
+                        Vérifier un lien URL reçu par e-mail ou SMS dans le but de réaliser une démarche administrative. </br>  <code>Il est important de le copier et de le coller afin de détecter si le lien contient des caractères cyrilliques.</code> 
+                    </p>
+                </div>
+
+                <!-- Url checker input -->
+                <div class="input-group mb-3"> 
+                    <input id="checkUrlInput" type="text" class="form-control ms-3" placeholder="Coller l'URL" aria-label="Coller l'URL" aria-describedby="button-addon2"> 
+                    <button class="btn btn-secondary d-none" type="button" id="pastUrl"> 
+                        <i class="bi bi-clipboard"></i> 
+                    </button> 
+                    <button class="btn btn-primary me-3" type="button" id="checkUrlButton">Vérifier</button> 
+                </div> 
+
+
+                <!-- Alerte -->
+                <div id="alertUrlCheck" class="alert alert-dismissible alert-primary text-align-center mx-3 d-none">
+                    <strong>Information</strong><br> Ce site n'a pas été reconnu.
+                </div>
+
+
+                <div class="d-flex justify-content-center align-items-start p-2">
+                    <a target="_blank" href="https://github.com/Mending-Electronics" class="btn btn-sm btn-primary">
+                        <i class="bi bi-github text-secondary me-2"></i>
+                        <strong>GitHub </strong>
+                    </a>
+
+                    <a target="_blank" href="https://www.signal-arnaques.com/" class="btn btn-sm btn-danger ms-3">
+                        <i class="bi bi-exclamation-octagon text-secondary me-2"></i>
+                        <strong>Signal-Arnaques</strong>
+                    </a>
+                </div>
+
+                <div class="d-flex justify-content-center align-items-start pb-2">
+                    <a target="_blank" href="urls.html" class="btn btn-sm btn-primary">
+                        <i class="bi bi-card-checklist text-secondary me-2"></i>
+                        <strong>List des domaines pris en charge </strong>
+                    </a>
+                </div>
+
+
+
+            </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+          </div>
+
+
+
+
+
+
+            
+        <!-- Import Bootstrap 5.3 Bundle JS (CDN) -->
+        <script type="text/javascript" src="js/bootstrap.bundle.min.js"></script>
+
+        <!-- Import main popup JS -->
+        <script type="text/javascript" src="popup.js"></script>
+        
+    </body>
+</html>
