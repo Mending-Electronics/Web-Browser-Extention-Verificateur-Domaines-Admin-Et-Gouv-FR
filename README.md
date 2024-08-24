@@ -52,7 +52,7 @@ L'extension vérifie actuellement plusieurs sites web gouvernementaux et adminis
 ![icon](https://github.com/Mending-Electronics/Web-Browser-Extention-Verificateur-URL-Gouv-FR/blob/main/Capture/Capture5.png?raw=true "icon")
 
 
-## Verifier manuelement un lien avant de cliquer dessus
+## Vérifier manuellement un lien avant de cliquer dessus
 
 **lien authentique**
  
