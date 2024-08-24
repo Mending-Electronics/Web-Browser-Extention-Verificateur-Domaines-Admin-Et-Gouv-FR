@@ -29,9 +29,38 @@ Le **Vérificateur d'Authenticité des URL du Gouvernement Français** est une e
 L'extension vérifie actuellement plusieurs sites web gouvernementaux et administratifs français.
 
 
-## Contribuer
+# Capture
 
-Les contributions sont les bienvenues ! N'hésitez pas à soumettre une demande de tirage ou à ouvrir une issue si vous avez des suggestions ou des améliorations.
+## Icone *notification*
+
+![icon](https://github.com/Mending-Electronics/Web-Browser-Extention-Verificateur-URL-Gouv-FR/blob/main/Capture/Capture0.png?raw=true "icon")
+
+## Lien de confiance
+
+**notification sur l'icone**
+
+![icone](https://github.com/Mending-Electronics/Web-Browser-Extention-Verificateur-URL-Gouv-FR/blob/main/Capture/Capture1.png?raw=true "icone")
+
+*mention : "Sûr! Ce site est authentique."*
+
+![icon](https://github.com/Mending-Electronics/Web-Browser-Extention-Verificateur-URL-Gouv-FR/blob/main/Capture/Capture2.png?raw=true "icon")
+
+
+## Lien malvaillant ou non connu de l'extention
+**mention : "Ce site n'a pas été reconnu."**
+
+![icon](https://github.com/Mending-Electronics/Web-Browser-Extention-Verificateur-URL-Gouv-FR/blob/main/Capture/Capture5.png?raw=true "icon")
+
+
+## Verifier manuelement un lien avant de cliquer dessus
+
+**lien authentique**
+ 
+![icon](https://github.com/Mending-Electronics/Web-Browser-Extention-Verificateur-URL-Gouv-FR/blob/main/Capture/Capture3.png?raw=true "icon")
+
+**lien contenant le caractère "о" du clavier cyrilique**
+
+![icon](https://github.com/Mending-Electronics/Web-Browser-Extention-Verificateur-URL-Gouv-FR/blob/main/Capture/Capture4.png?raw=true "icon")
 
 ## Licence
 
