@@ -1,7 +1,7 @@
 {
   "manifest_version": 3,
-  "name": "FR Gouv. URLS Authenticator Checker",
-  "description": "This extension is for education purpose",
+  "name": "Verificateur URL Gouv FR",
+  "description": "Le Vérificateur d'Authenticité des URL du Gouvernement Français est une extension Chrome conçue pour renforcer la sécurité en ligne en empêchant l'accès aux URL fausses et malveillantes contenant des caractères cyrilliques. Cette extension est particulièrement utile pour vérifier l'authenticité des sites administratifs et gouvernementaux français.",
   "version": "1.0",
   "action": {
     "notified_icon": "icon/icon_notified.png",
