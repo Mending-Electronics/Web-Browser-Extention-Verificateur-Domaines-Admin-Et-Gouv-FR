@@ -25,7 +25,7 @@ Le **Vérificateur de nom de domaines Administratifs et Gouvernementaux Françai
 - **Notification Popup** : Affiche un message indiquant si le site web est authentique ou non.
 
 ## Vérification manuelle d'un lien URL
-- **Soumettre un lien URL à vérifier ** : Permet de soumettre un lien à vérification avant d'y accéder. (cliquer dessus)
+- **Soumettre un lien URL à vérifier** : Permet de soumettre un lien à vérification avant d'y accéder. (cliquer dessus)
 
 ## Installation
 
