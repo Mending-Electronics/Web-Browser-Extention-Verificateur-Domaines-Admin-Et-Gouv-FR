@@ -1,8 +1,8 @@
-# Vérificateur d'Authenticité des URL Administratifs et Gouvernementaux Français
+# Vérificateur de nom de domaines Administratifs et Gouvernementaux Français
 
 ## Aperçu
 
-Le **Vérificateur d'Authenticité des URL Administratifs et Gouvernementaux Français** est une extension Chrome et Microsoft Edge conçue pour renforcer la sécurité en ligne en identifiant les liens URL malveillants et homographiques. Son usage est accès sur la vérification des liens URL administratifs et gouvernementaux français.
+Le **Vérificateur de nom de domaines Administratifs et Gouvernementaux Français** est une extension Chrome et Microsoft Edge conçue pour renforcer la sécurité en ligne en identifiant les liens URL malveillants et homographiques. Son usage est accès sur la vérification des liens URL administratifs et gouvernementaux français.
 
 
 ## Lexique
