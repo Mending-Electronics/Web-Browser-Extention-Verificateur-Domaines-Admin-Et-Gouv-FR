@@ -30,17 +30,17 @@
         <ul class="nav nav-tabs" role="tablist">
             <li class="nav-item" role="presentation">
                 <a class="nav-link active" data-bs-toggle="tab" href="#home" aria-selected="true" role="tab" tabindex="-1">
-                    A Propos
+                    À Propos
                 </a>
             </li>
             <li class="nav-item" role="presentation">
                 <a class="nav-link" data-bs-toggle="tab" href="#info" aria-selected="false" role="tab">
-                    Types de liens malvaillants
+                    Types de liens malveillants
                 </a>
             </li>
             <li class="nav-item" role="presentation">
                 <a class="nav-link" data-bs-toggle="tab" href="#check" aria-selected="false" role="tab">
-                    Vérifier un URL
+                    Vérifier un lien URL
                 </a>
             </li>
 
@@ -59,33 +59,16 @@
         
                 <div class="d-flex justify-content-center align-items-center m-3 mt-2">
                     <p class="mb-0">
-                       Cette extension web a été conçue pour renforcer la sécurité en ligne en identifiant les URL malveillantes et homographiques. Son usage est accès sur la vérification de l’authenticité des sites administratifs et gouvernementaux français.
+                        Cette extension web a été conçue pour renforcer la sécurité en ligne en identifiant les liens URL malveillants et homographiques. Son usage est accès sur la vérification des liens URL administratifs et gouvernementaux français.
                     </p>
                 </div>
 
-                <div class="d-flex justify-content-center align-items-start p-2">
-                    <a target="_blank" href="https://github.com/Mending-Electronics" class="btn btn-sm btn-primary">
-                        <i class="bi bi-github text-secondary me-2"></i>
-                        <strong>GitHub </strong>
-                    </a>
-
-                    <a target="_blank" href="https://www.signal-arnaques.com/" class="btn btn-sm btn-danger ms-3">
-                        <i class="bi bi-exclamation-octagon text-secondary me-2"></i>
-                        <strong>Signal-Arnaques</strong>
-                    </a>
-                </div>
-
-                <div class="d-flex justify-content-center align-items-start pb-2">
-                    <a target="_blank" href="urls.html" class="btn btn-sm btn-primary">
-                        <i class="bi bi-card-checklist text-secondary me-2"></i>
-                        <strong>List des domaines pris en charge </strong>
-                    </a>
-                </div>
 
             </div>
 
             <!-- 2 -->
             <div class="tab-pane fade" id="info" role="tabpanel">
+
                     
                 <!-- Accordion -->
                 <div class="accordion" id="accordionExample">
@@ -106,10 +89,10 @@
 
 
                                 <p>
-                                   Les liens dont le nom de domaine contient des caractères cyrilliques peuvent sembler authentiques visuellement, mais ils peuvent rediriger l'utilisateur vers une page de phishing. Il est crucial de vérifier l'authenticité des URL avant de cliquer, surtout lorsqu'il s'agit de sites administratifs, gouvernementaux, e-commerces, reseaux sociaux et postaux.
+                                   Les liens dont le nom de domaine contient des caractères cyrilliques peuvent sembler authentiques visuellement, mais ils peuvent rediriger l'utilisateur vers une page de phishing. Il est crucial de vérifier l'authenticité des URL avant de cliquer, surtout lorsqu'il s'agit de sites administratifs, gouvernementaux, e-commerces, réseaux sociaux et postaux.
                                 </p>
 
-                                <p>Voici deux liens visuellement identiques (Homographiques) :</p>
+                                <p>Voici deux liens visuellement identiques (homographiques) :</p>
                                 <ul>
                                 <li><a target="_blank" href="https://www.example.com">https://www.example.com</a></li>
                                 <li><a target="_blank" href="https://www.exаmple.com">https://www.exаmple.com</a> <code>(contient un caractère "а" en cyrillique)</code> </li>
@@ -145,6 +128,17 @@
                     </div>
                 </div>
 
+
+                <div class="mb-2 mt-3 mx-3">
+                    <strong>Pour information :</strong>
+                    <p>Un nom de domaine est une adresse unique qui permet d'identifier un site web sur Internet. 
+                        <br> 
+                        <code>Par exemple, dans l'adresse "www.example.com/accueil", "example.com" est le nom de domaine.</code> 
+                    </p>
+                </div>
+
+
+
             </div>
 
 
@@ -152,47 +146,32 @@
             <div class="tab-pane fade" id="check" role="tabpanel">
 
         
-                <div class="d-flex justify-content-center align-items-center m-3 mt-2">
+                <div class="d-flex justify-content-center align-items-center m-3 mt-4">
                     <p class="mb-0">
-                        Vérifier un lien URL reçu par e-mail ou SMS dans le but de réaliser une démarche administrative. </br>  <code>Il est important de le copier et de le coller afin de détecter si le lien contient des caractères cyrilliques.</code> 
+                        Vérifier un lien URL reçu par e-mail ou SMS. </br>  
+                        <code>Il est important de copier/coller le lien afin de détecter s'il ne s'agit pas d'un lien homographique (nom de domaine visuellement identique). 
+                            <br>
+                             <i class="bi bi-arrow-return-right"></i> Cliquer droit sur le lien > Cliquer sur "Copier le lien"
+                        </code>
+
                     </p>
                 </div>
 
                 <!-- Url checker input -->
-                <div class="input-group mb-3"> 
-                    <input id="checkUrlInput" type="text" class="form-control ms-3" placeholder="Coller l'URL" aria-label="Coller l'URL" aria-describedby="button-addon2"> 
-                    <button class="btn btn-secondary d-none" type="button" id="pastUrl"> 
-                        <i class="bi bi-clipboard"></i> 
-                    </button> 
-                    <button class="btn btn-primary me-3" type="button" id="checkUrlButton">Vérifier</button> 
-                </div> 
+                 <div class="my-4">
+                    <div class="input-group ">
+                        <input id="checkUrlInput" type="text" class="form-control ms-3" placeholder="Coller l'URL" aria-label="Coller l'URL" aria-describedby="button-addon2"> 
+                        <button class="btn btn-secondary d-none" type="button" id="pastUrl"> 
+                            <i class="bi bi-clipboard"></i> 
+                        </button> 
+                        <button class="btn btn-primary me-3" type="button" id="checkUrlButton">Vérifier</button> 
+                        
+                    </div> 
+                    <label id="checkUrlLabel" class="d-block ms-3 d-none">Success! You've done it.</label>
+                 </div>
 
-
-                <!-- Alerte -->
-                <div id="alertUrlCheck" class="alert alert-dismissible alert-primary text-align-center mx-3 d-none">
-                    <strong>Information</strong><br> Ce site n'a pas été reconnu.
-                </div>
-
-
-                <div class="d-flex justify-content-center align-items-start p-2">
-                    <a target="_blank" href="https://github.com/Mending-Electronics" class="btn btn-sm btn-primary">
-                        <i class="bi bi-github text-secondary me-2"></i>
-                        <strong>GitHub </strong>
-                    </a>
-
-                    <a target="_blank" href="https://www.signal-arnaques.com/" class="btn btn-sm btn-danger ms-3">
-                        <i class="bi bi-exclamation-octagon text-secondary me-2"></i>
-                        <strong>Signal-Arnaques</strong>
-                    </a>
-                </div>
-
-                <div class="d-flex justify-content-center align-items-start pb-2">
-                    <a target="_blank" href="urls.html" class="btn btn-sm btn-primary">
-                        <i class="bi bi-card-checklist text-secondary me-2"></i>
-                        <strong>List des domaines pris en charge </strong>
-                    </a>
-                </div>
-
+                
+                
 
 
             </div>
@@ -200,8 +179,24 @@
 
 
 
+            <div class="d-flex justify-content-center align-items-start p-2">
+                <a target="_blank" href="https://github.com/Mending-Electronics" class="btn btn-sm btn-primary">
+                    <i class="bi bi-github text-secondary me-2"></i>
+                    <strong>GitHub </strong>
+                </a>
 
+                <a target="_blank" href="https://www.signal-arnaques.com/" class="btn btn-sm btn-danger ms-4">
+                    <i class="bi bi-exclamation-octagon text-secondary me-2"></i>
+                    <strong>Signal-Arnaques</strong>
+                </a>
+            </div>
 
+            <div class="d-flex justify-content-center align-items-start pb-2">
+                <a target="_blank" href="urls.html" class="btn btn-sm btn-info">
+                    <i class="bi bi-card-checklist text-secondary me-2"></i>
+                    <strong>Liste des domaines pris en charge </strong>
+                </a>
+            </div>
 
 
 

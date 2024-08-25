@@ -10,25 +10,32 @@ document.addEventListener("DOMContentLoaded", function() {
           console.log("Executing script in active tab with URL:", url);
           const authUrls = [
             "https://www.antai.gouv.fr/",
-            "https://www.impots.gouv.fr/",
-            "https://www.legifrance.gouv.fr/",
             "https://www.service-public.fr/",
-            "https://cyber.gouv.fr/",
-            "https://app.dvf.etalab.gouv.fr/",
+            "https://www.amendes.gouv.fr/",
+            "https://www.stationnement.gouv.fr/",
             "https://www.ameli.fr/",
-            "https://www.pole-emploi.fr/",
             "https://www.caf.fr/",
             "https://www.lassuranceretraite.fr/",
-            "https://www.anah.gouv.fr/",
-            "https://www.interieur.gouv.fr/",
+            "https://cyber.gouv.fr/",
             "https://www.education.gouv.fr/",
+            "https://www.pole-emploi.fr/",
+            "https://www.impots.gouv.fr/",
+            "https://www.anah.fr/",
+            "https://app.dvf.etalab.gouv.fr/",
+            "https://www.legifrance.gouv.fr/",
+            "https://www.federationpeche.fr/",
+            "https://www.cartedepeche.fr/",
+            "https://www.interieur.gouv.fr/",
             "https://solidarites-sante.gouv.fr/",
             "https://www.laposte.fr/",
             "https://secure.digiposte.fr/identification-plus",
+            "https://www.france-services.gouv.fr/",
+            "https://transparence.sante.gouv.fr/",
+            "https://www.masecurite.interieur.gouv.fr/",
             "https://www.mesdroitssociaux.gouv.fr/",
             "https://www.cesu.urssaf.fr/",
-            "https://www.demarches-simplifiees.fr/",
-            "https://www.masecurite.interieur.gouv.fr/"
+            "https://www.urssaf.fr/",
+            "https://www.demarches-simplifiees.fr/"
          ];
         
           const isAuthUrl = authUrls.some(authUrl => url.startsWith(authUrl));
@@ -51,11 +58,11 @@ document.addEventListener("DOMContentLoaded", function() {
     if (message.found) {
       alertDiv.classList.remove("alert-primary");
       alertDiv.classList.add("alert-success");
-      alertDiv.innerHTML = "<strong>Sûr !</strong><br> Ce site est authentique.";
+      alertDiv.innerHTML = "<i class='bi bi-check-circle me-2'></i><strong>Ce site est sûr !</strong><br> Le nom de domaine est authentique.";
     } else {
       alertDiv.classList.remove("alert-success");
       alertDiv.classList.add("alert-primary");
-      alertDiv.innerHTML = "<strong>Information</strong><br> Ce site n'a pas été reconnu.";
+      alertDiv.innerHTML = "<i class='bi bi-exclamation-circle me-2'></i><strong>Information</strong><br> Le nom de domaine n'a pas été reconnu.";
     }
   });
   
@@ -70,41 +77,54 @@ document.addEventListener("DOMContentLoaded", function() {
         try {
             const url = document.getElementById("checkUrlInput").value;
             const authUrls = [
-              "https://www.antai.gouv.fr/",
-              "https://www.impots.gouv.fr/",
-              "https://www.legifrance.gouv.fr/",
-              "https://www.service-public.fr/",
-              "https://cyber.gouv.fr/",
-              "https://app.dvf.etalab.gouv.fr/",
-              "https://www.ameli.fr/",
-              "https://www.pole-emploi.fr/",
-              "https://www.caf.fr/",
-              "https://www.lassuranceretraite.fr/",
-              "https://www.anah.gouv.fr/",
-              "https://www.interieur.gouv.fr/",
-              "https://www.education.gouv.fr/",
-              "https://solidarites-sante.gouv.fr/",
-              "https://www.laposte.fr/",
-              "https://secure.digiposte.fr/identification-plus",
-              "https://www.mesdroitssociaux.gouv.fr/",
-              "https://www.cesu.urssaf.fr/",
-              "https://www.demarches-simplifiees.fr/",
-              "https://www.masecurite.interieur.gouv.fr/"
+            "https://www.antai.gouv.fr/",
+            "https://www.service-public.fr/",
+            "https://www.amendes.gouv.fr/",
+            "https://www.stationnement.gouv.fr/",
+            "https://www.ameli.fr/",
+            "https://www.caf.fr/",
+            "https://www.lassuranceretraite.fr/",
+            "https://cyber.gouv.fr/",
+            "https://www.education.gouv.fr/",
+            "https://www.pole-emploi.fr/",
+            "https://www.impots.gouv.fr/",
+            "https://www.anah.fr/",
+            "https://app.dvf.etalab.gouv.fr/",
+            "https://www.legifrance.gouv.fr/",
+            "https://www.federationpeche.fr/",
+            "https://www.cartedepeche.fr/",
+            "https://www.interieur.gouv.fr/",
+            "https://solidarites-sante.gouv.fr/",
+            "https://www.laposte.fr/",
+            "https://secure.digiposte.fr/identification-plus",
+            "https://www.france-services.gouv.fr/",
+            "https://transparence.sante.gouv.fr/",
+            "https://www.masecurite.interieur.gouv.fr/",
+            "https://www.mesdroitssociaux.gouv.fr/",
+            "https://www.cesu.urssaf.fr/",
+            "https://www.urssaf.fr/",
+            "https://www.demarches-simplifiees.fr/"
            ];
 
             const isAuthInputUrl = authUrls.some(authInputUrl => url.startsWith(authInputUrl));
-            const alertDiv = document.getElementById("alertUrlCheck");
+            const checkUrlInput = document.getElementById("checkUrlInput");
+            const checkUrlLabel = document.getElementById("checkUrlLabel");
+
             if (isAuthInputUrl) {
                 console.log("url authentique");
-                alertDiv.classList.remove("alert-primary", "d-none");
-                alertDiv.classList.add("alert-success");
-                alertDiv.innerHTML = "<strong>Sûr !</strong><br> Ce site est authentique.";
+                checkUrlInput.classList.remove("is-invalid");
+                checkUrlInput.classList.add("is-valid");
+                checkUrlLabel.classList.remove("invalid-feedback", "d-none");
+                checkUrlLabel.classList.add("valid-feedback");
+                checkUrlLabel.innerHTML = "<i class='bi bi-check-circle me-2'></i><strong>Ce lien est sûr !</strong> Le nom de domaine est authentique.";
 
             } else {
                 console.log("url non authentique");
-                alertDiv.classList.remove("alert-success", "d-none");
-                alertDiv.classList.add("alert-primary");
-                alertDiv.innerHTML = "<strong>Information</strong><br> Ce site n'a pas été reconnu.";
+                checkUrlInput.classList.remove("is-valid");
+                checkUrlInput.classList.add("is-invalid");
+                checkUrlLabel.classList.remove("valid-feedback", "d-none");
+                checkUrlLabel.classList.add("invalid-feedback");
+                checkUrlLabel.innerHTML = "<i class='bi bi-exclamation-circle me-2'></i><strong>Information</strong> Le nom de domaine n'a pas été reconnu.";
             }
         } catch (error) {
             console.error("Erreur lors de la vérification de l'URL :", error);
