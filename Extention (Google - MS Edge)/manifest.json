@@ -3,6 +3,7 @@
   "name": "Verificateur Domaines Admin & Gouv FR",
   "description": "Le Vérificateur de nom de domaines Administratifs et Gouvernementaux Français est une extension Chrome et Microsoft Edge conçue pour renforcer la sécurité en ligne en identifiant les liens URL malveillants et homographiques. Son usage est accès sur la vérification des liens URL administratifs et gouvernementaux français.",
   "version": "1.0",
+  "update_url": "https://raw.githubusercontent.com/Mending-Electronics/Web-Browser-Extention-Verificateur-Domaines-Admin-Et-Gouv-FR/main/update.json",
   "action": {
     "notified_icon": "icon/icon_notified.png",
     "disabled_icon": "icon/icon_disabled.png",

@@ -19,23 +19,23 @@ Le **Vérificateur de nom de domaines Administratifs et Gouvernementaux Françai
 
 ## Fonctionnalités
 
-## Vérification de l'url de l'onglet actif
+### Vérification de l'url de l'onglet actif
 - **Vérification des URL** : Vérifie si l'URL de l'onglet actif correspond à une liste de sites web de confiance.
 - **Notification par Icône** : Change l'icône de l'extension en fonction de l'authenticité de l'URL.
 - **Notification Popup** : Affiche un message indiquant si le site web est authentique ou non.
 
-## Vérification manuelle d'un lien URL
+### Vérification manuelle d'un lien URL
 - **Soumettre un lien URL à vérifier** : Permet de soumettre un lien à vérification avant d'y accéder. (cliquer dessus)
 
 ## Installation
 
-## Chrome
+### Chrome
 1. Clonez ou téléchargez le dépôt.
 2. Ouvrez Chrome et naviguez vers `chrome://extensions/`.
 3. Activez le "Mode développeur" en haut à droite.
 4. Cliquez sur "Charger l'extension non empaquetée" et sélectionnez le répertoire "Extention (Google - MS Edge)" contenant les fichiers de l'extension.
 
-## Edge
+### Edge
 1. Clonez ou téléchargez le dépôt.
 2. Ouvrez Edge et naviguez vers `edge://extensions/`.
 3. Activez le "Mode développeur" dans le volet de gauche.
