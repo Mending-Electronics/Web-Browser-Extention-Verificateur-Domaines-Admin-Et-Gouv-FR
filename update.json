@@ -3,7 +3,7 @@
     "your-extension-id": {
       "updates": [
         {
-          "version": "1.0.1",
+          "version": "1.0.2",
           "update_link": "https://github.com/Mending-Electronics/Web-Browser-Extention-Verificateur-Domaines-Admin-Et-Gouv-FR/blob/main/dist.zip"
         }
       ]
