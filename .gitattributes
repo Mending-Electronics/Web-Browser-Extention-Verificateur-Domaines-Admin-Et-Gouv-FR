@@ -1,0 +1,2 @@
+# Désactive uniquement les fichiers HTML
+*.html linguist-detectable=false
